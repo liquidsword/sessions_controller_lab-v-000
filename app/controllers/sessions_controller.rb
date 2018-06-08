@@ -2,7 +2,11 @@ class SessionsController < ApplicationController
   def new
   end
 
-  def create
+  def create(name)
+    if :name = nil
+      redirect_to :login
+
+    end
 
   end
 
